@@ -41,8 +41,23 @@
             this.lblOIHrperCutoff = new System.Windows.Forms.Label();
             this.lblOIIncomeperCutoff = new System.Windows.Forms.Label();
             this.gboxEmployeeInfo = new System.Windows.Forms.GroupBox();
-            this.txtEmployeeNum = new System.Windows.Forms.TextBox();
+            this.lblCivilStatus = new System.Windows.Forms.Label();
+            this.txtDesignation = new System.Windows.Forms.TextBox();
+            this.txtEmployeeStatus = new System.Windows.Forms.TextBox();
+            this.txtDependentStatus = new System.Windows.Forms.TextBox();
+            this.txtCivilStatus = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblMiddlename = new System.Windows.Forms.Label();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.lblQualified = new System.Windows.Forms.Label();
+            this.lblPaydate = new System.Windows.Forms.Label();
+            this.lblEmployeeStatus = new System.Windows.Forms.Label();
+            this.lblDesignation = new System.Windows.Forms.Label();
             this.txtDepartment = new System.Windows.Forms.TextBox();
+            this.txtEmployeeNumber = new System.Windows.Forms.TextBox();
             this.gboxBasicIncome = new System.Windows.Forms.GroupBox();
             this.txtBIIncomeperCutoff = new System.Windows.Forms.TextBox();
             this.txtBIRateperHr = new System.Windows.Forms.TextBox();
@@ -61,32 +76,20 @@
             this.lblGrossIncome = new System.Windows.Forms.Label();
             this.lblNetIncome = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblDesignation = new System.Windows.Forms.Label();
-            this.lblEmployeeStatus = new System.Windows.Forms.Label();
-            this.lblPaydate = new System.Windows.Forms.Label();
-            this.lblQualified = new System.Windows.Forms.Label();
-            this.lblSurname = new System.Windows.Forms.Label();
-            this.lblMiddlename = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtMiddleName = new System.Windows.Forms.TextBox();
-            this.txtSurname = new System.Windows.Forms.TextBox();
-            this.txtCivilStatus = new System.Windows.Forms.TextBox();
-            this.txtDependentStatus = new System.Windows.Forms.TextBox();
-            this.txtPaydate = new System.Windows.Forms.TextBox();
-            this.txtEmployeeStatus = new System.Windows.Forms.TextBox();
-            this.txtDesignation = new System.Windows.Forms.TextBox();
-            this.lblCivilStatus = new System.Windows.Forms.Label();
             this.gboxRegulardeductions = new System.Windows.Forms.GroupBox();
+            this.txtIncomeTaxContribute = new System.Windows.Forms.TextBox();
+            this.lblIncometax = new System.Windows.Forms.Label();
             this.txtPagibigContribute = new System.Windows.Forms.TextBox();
             this.txtSSSContribute = new System.Windows.Forms.TextBox();
             this.txtPhilHContribute = new System.Windows.Forms.TextBox();
             this.lblSSSContributions = new System.Windows.Forms.Label();
             this.lblPhilHealth = new System.Windows.Forms.Label();
             this.lblPagibig = new System.Windows.Forms.Label();
-            this.txtIncomeTaxContribute = new System.Windows.Forms.TextBox();
-            this.lblIncometax = new System.Windows.Forms.Label();
             this.gboxOtherDeductions = new System.Windows.Forms.GroupBox();
+            this.txtOtherLoan = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSalaryLoan = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtFacultyLoan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFacultyDeposit = new System.Windows.Forms.TextBox();
@@ -95,19 +98,16 @@
             this.lblSSSloan = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtSalaryLoan = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtOtherLoan = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbDeductionSummary = new System.Windows.Forms.GroupBox();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnNetIncome = new System.Windows.Forms.Button();
+            this.btnGrossIncome = new System.Windows.Forms.Button();
             this.txtTotalDeduction = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnGrossIncome = new System.Windows.Forms.Button();
-            this.btnNetIncome = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
+            this.dtpPayDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gboxEmployeeInfo.SuspendLayout();
             this.gboxBasicIncome.SuspendLayout();
@@ -116,14 +116,15 @@
             this.gboxSummaryIncome.SuspendLayout();
             this.gboxRegulardeductions.SuspendLayout();
             this.gboxOtherDeductions.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbDeductionSummary.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(6, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 147);
+            this.pictureBox1.Size = new System.Drawing.Size(168, 132);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -239,10 +240,10 @@
             // 
             // gboxEmployeeInfo
             // 
+            this.gboxEmployeeInfo.Controls.Add(this.dtpPayDate);
             this.gboxEmployeeInfo.Controls.Add(this.lblCivilStatus);
             this.gboxEmployeeInfo.Controls.Add(this.txtDesignation);
             this.gboxEmployeeInfo.Controls.Add(this.txtEmployeeStatus);
-            this.gboxEmployeeInfo.Controls.Add(this.txtPaydate);
             this.gboxEmployeeInfo.Controls.Add(this.txtDependentStatus);
             this.gboxEmployeeInfo.Controls.Add(this.txtCivilStatus);
             this.gboxEmployeeInfo.Controls.Add(this.txtSurname);
@@ -255,8 +256,8 @@
             this.gboxEmployeeInfo.Controls.Add(this.lblPaydate);
             this.gboxEmployeeInfo.Controls.Add(this.lblEmployeeStatus);
             this.gboxEmployeeInfo.Controls.Add(this.lblDesignation);
-            this.gboxEmployeeInfo.Controls.Add(this.txtEmployeeNum);
             this.gboxEmployeeInfo.Controls.Add(this.txtDepartment);
+            this.gboxEmployeeInfo.Controls.Add(this.txtEmployeeNumber);
             this.gboxEmployeeInfo.Controls.Add(this.pictureBox1);
             this.gboxEmployeeInfo.Controls.Add(this.C);
             this.gboxEmployeeInfo.Controls.Add(this.lblDepartment);
@@ -268,21 +269,164 @@
             this.gboxEmployeeInfo.TabStop = false;
             this.gboxEmployeeInfo.Text = "EMPLOYEE BASIC INFO:";
             // 
-            // txtEmployeeNum
+            // lblCivilStatus
             // 
-            this.txtEmployeeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeNum.Location = new System.Drawing.Point(126, 198);
-            this.txtEmployeeNum.Name = "txtEmployeeNum";
-            this.txtEmployeeNum.Size = new System.Drawing.Size(255, 20);
-            this.txtEmployeeNum.TabIndex = 23;
+            this.lblCivilStatus.AutoSize = true;
+            this.lblCivilStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCivilStatus.Location = new System.Drawing.Point(403, 97);
+            this.lblCivilStatus.Name = "lblCivilStatus";
+            this.lblCivilStatus.Size = new System.Drawing.Size(62, 13);
+            this.lblCivilStatus.TabIndex = 53;
+            this.lblCivilStatus.Text = "Civil Status:";
+            // 
+            // txtDesignation
+            // 
+            this.txtDesignation.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesignation.Location = new System.Drawing.Point(546, 198);
+            this.txtDesignation.Name = "txtDesignation";
+            this.txtDesignation.Size = new System.Drawing.Size(255, 20);
+            this.txtDesignation.TabIndex = 52;
+            // 
+            // txtEmployeeStatus
+            // 
+            this.txtEmployeeStatus.BackColor = System.Drawing.SystemColors.Window;
+            this.txtEmployeeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeStatus.Location = new System.Drawing.Point(546, 172);
+            this.txtEmployeeStatus.Name = "txtEmployeeStatus";
+            this.txtEmployeeStatus.Size = new System.Drawing.Size(255, 20);
+            this.txtEmployeeStatus.TabIndex = 51;
+            // 
+            // txtDependentStatus
+            // 
+            this.txtDependentStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDependentStatus.Location = new System.Drawing.Point(546, 120);
+            this.txtDependentStatus.Name = "txtDependentStatus";
+            this.txtDependentStatus.Size = new System.Drawing.Size(255, 20);
+            this.txtDependentStatus.TabIndex = 49;
+            // 
+            // txtCivilStatus
+            // 
+            this.txtCivilStatus.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCivilStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCivilStatus.Location = new System.Drawing.Point(546, 94);
+            this.txtCivilStatus.Name = "txtCivilStatus";
+            this.txtCivilStatus.Size = new System.Drawing.Size(255, 20);
+            this.txtCivilStatus.TabIndex = 48;
+            // 
+            // txtSurname
+            // 
+            this.txtSurname.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSurname.Location = new System.Drawing.Point(546, 68);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(255, 20);
+            this.txtSurname.TabIndex = 47;
+            // 
+            // txtMiddleName
+            // 
+            this.txtMiddleName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName.Location = new System.Drawing.Point(546, 42);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(255, 20);
+            this.txtMiddleName.TabIndex = 46;
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(546, 16);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(255, 20);
+            this.txtFirstName.TabIndex = 45;
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(403, 19);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(60, 13);
+            this.lblFirstName.TabIndex = 44;
+            this.lblFirstName.Text = "First Name:";
+            // 
+            // lblMiddlename
+            // 
+            this.lblMiddlename.AutoSize = true;
+            this.lblMiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMiddlename.Location = new System.Drawing.Point(403, 45);
+            this.lblMiddlename.Name = "lblMiddlename";
+            this.lblMiddlename.Size = new System.Drawing.Size(72, 13);
+            this.lblMiddlename.TabIndex = 42;
+            this.lblMiddlename.Text = "Middle Name:";
+            // 
+            // lblSurname
+            // 
+            this.lblSurname.AutoSize = true;
+            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSurname.Location = new System.Drawing.Point(403, 71);
+            this.lblSurname.Name = "lblSurname";
+            this.lblSurname.Size = new System.Drawing.Size(52, 13);
+            this.lblSurname.TabIndex = 40;
+            this.lblSurname.Text = "Surname:";
+            // 
+            // lblQualified
+            // 
+            this.lblQualified.AutoSize = true;
+            this.lblQualified.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQualified.Location = new System.Drawing.Point(403, 123);
+            this.lblQualified.Name = "lblQualified";
+            this.lblQualified.Size = new System.Drawing.Size(145, 13);
+            this.lblQualified.TabIndex = 38;
+            this.lblQualified.Text = "Qualified Dependents Status:";
+            // 
+            // lblPaydate
+            // 
+            this.lblPaydate.AutoSize = true;
+            this.lblPaydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaydate.Location = new System.Drawing.Point(403, 149);
+            this.lblPaydate.Name = "lblPaydate";
+            this.lblPaydate.Size = new System.Drawing.Size(49, 13);
+            this.lblPaydate.TabIndex = 36;
+            this.lblPaydate.Text = "Paydate:";
+            // 
+            // lblEmployeeStatus
+            // 
+            this.lblEmployeeStatus.AutoSize = true;
+            this.lblEmployeeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeStatus.Location = new System.Drawing.Point(403, 175);
+            this.lblEmployeeStatus.Name = "lblEmployeeStatus";
+            this.lblEmployeeStatus.Size = new System.Drawing.Size(89, 13);
+            this.lblEmployeeStatus.TabIndex = 34;
+            this.lblEmployeeStatus.Text = "Employee Status:";
+            // 
+            // lblDesignation
+            // 
+            this.lblDesignation.AutoSize = true;
+            this.lblDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesignation.Location = new System.Drawing.Point(403, 201);
+            this.lblDesignation.Name = "lblDesignation";
+            this.lblDesignation.Size = new System.Drawing.Size(66, 13);
+            this.lblDesignation.TabIndex = 24;
+            this.lblDesignation.Text = "Designation:";
             // 
             // txtDepartment
             // 
+            this.txtDepartment.BackColor = System.Drawing.SystemColors.Window;
             this.txtDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepartment.Location = new System.Drawing.Point(126, 172);
+            this.txtDepartment.Location = new System.Drawing.Point(126, 198);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(255, 20);
-            this.txtDepartment.TabIndex = 22;
+            this.txtDepartment.TabIndex = 23;
+            // 
+            // txtEmployeeNumber
+            // 
+            this.txtEmployeeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeNumber.Location = new System.Drawing.Point(126, 172);
+            this.txtEmployeeNumber.Name = "txtEmployeeNumber";
+            this.txtEmployeeNumber.Size = new System.Drawing.Size(255, 20);
+            this.txtEmployeeNumber.TabIndex = 22;
             // 
             // gboxBasicIncome
             // 
@@ -302,9 +446,11 @@
             // 
             // txtBIIncomeperCutoff
             // 
+            this.txtBIIncomeperCutoff.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtBIIncomeperCutoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBIIncomeperCutoff.Location = new System.Drawing.Point(126, 86);
             this.txtBIIncomeperCutoff.Name = "txtBIIncomeperCutoff";
+            this.txtBIIncomeperCutoff.ReadOnly = true;
             this.txtBIIncomeperCutoff.Size = new System.Drawing.Size(255, 20);
             this.txtBIIncomeperCutoff.TabIndex = 8;
             // 
@@ -342,9 +488,11 @@
             // 
             // txtHIIncomeperCutoff
             // 
+            this.txtHIIncomeperCutoff.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtHIIncomeperCutoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHIIncomeperCutoff.Location = new System.Drawing.Point(129, 86);
             this.txtHIIncomeperCutoff.Name = "txtHIIncomeperCutoff";
+            this.txtHIIncomeperCutoff.ReadOnly = true;
             this.txtHIIncomeperCutoff.Size = new System.Drawing.Size(255, 20);
             this.txtHIIncomeperCutoff.TabIndex = 14;
             // 
@@ -382,9 +530,11 @@
             // 
             // txtOIIncomeperCutoff
             // 
+            this.txtOIIncomeperCutoff.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtOIIncomeperCutoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOIIncomeperCutoff.Location = new System.Drawing.Point(129, 86);
             this.txtOIIncomeperCutoff.Name = "txtOIIncomeperCutoff";
+            this.txtOIIncomeperCutoff.ReadOnly = true;
             this.txtOIIncomeperCutoff.Size = new System.Drawing.Size(255, 20);
             this.txtOIIncomeperCutoff.TabIndex = 17;
             // 
@@ -421,17 +571,21 @@
             // 
             // txtNetIncome
             // 
+            this.txtNetIncome.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtNetIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNetIncome.Location = new System.Drawing.Point(129, 57);
             this.txtNetIncome.Name = "txtNetIncome";
+            this.txtNetIncome.ReadOnly = true;
             this.txtNetIncome.Size = new System.Drawing.Size(255, 20);
             this.txtNetIncome.TabIndex = 19;
             // 
             // txtGrossIncome
             // 
+            this.txtGrossIncome.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtGrossIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrossIncome.Location = new System.Drawing.Point(129, 28);
             this.txtGrossIncome.Name = "txtGrossIncome";
+            this.txtGrossIncome.ReadOnly = true;
             this.txtGrossIncome.Size = new System.Drawing.Size(255, 20);
             this.txtGrossIncome.TabIndex = 18;
             // 
@@ -464,150 +618,6 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "label8";
             // 
-            // lblDesignation
-            // 
-            this.lblDesignation.AutoSize = true;
-            this.lblDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesignation.Location = new System.Drawing.Point(403, 201);
-            this.lblDesignation.Name = "lblDesignation";
-            this.lblDesignation.Size = new System.Drawing.Size(66, 13);
-            this.lblDesignation.TabIndex = 24;
-            this.lblDesignation.Text = "Designation:";
-            // 
-            // lblEmployeeStatus
-            // 
-            this.lblEmployeeStatus.AutoSize = true;
-            this.lblEmployeeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeStatus.Location = new System.Drawing.Point(403, 175);
-            this.lblEmployeeStatus.Name = "lblEmployeeStatus";
-            this.lblEmployeeStatus.Size = new System.Drawing.Size(89, 13);
-            this.lblEmployeeStatus.TabIndex = 34;
-            this.lblEmployeeStatus.Text = "Employee Status:";
-            // 
-            // lblPaydate
-            // 
-            this.lblPaydate.AutoSize = true;
-            this.lblPaydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaydate.Location = new System.Drawing.Point(403, 149);
-            this.lblPaydate.Name = "lblPaydate";
-            this.lblPaydate.Size = new System.Drawing.Size(49, 13);
-            this.lblPaydate.TabIndex = 36;
-            this.lblPaydate.Text = "Paydate:";
-            // 
-            // lblQualified
-            // 
-            this.lblQualified.AutoSize = true;
-            this.lblQualified.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQualified.Location = new System.Drawing.Point(403, 123);
-            this.lblQualified.Name = "lblQualified";
-            this.lblQualified.Size = new System.Drawing.Size(145, 13);
-            this.lblQualified.TabIndex = 38;
-            this.lblQualified.Text = "Qualified Dependents Status:";
-            // 
-            // lblSurname
-            // 
-            this.lblSurname.AutoSize = true;
-            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSurname.Location = new System.Drawing.Point(403, 71);
-            this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(52, 13);
-            this.lblSurname.TabIndex = 40;
-            this.lblSurname.Text = "Surname:";
-            // 
-            // lblMiddlename
-            // 
-            this.lblMiddlename.AutoSize = true;
-            this.lblMiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMiddlename.Location = new System.Drawing.Point(403, 45);
-            this.lblMiddlename.Name = "lblMiddlename";
-            this.lblMiddlename.Size = new System.Drawing.Size(72, 13);
-            this.lblMiddlename.TabIndex = 42;
-            this.lblMiddlename.Text = "Middle Name:";
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(403, 19);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(60, 13);
-            this.lblFirstName.TabIndex = 44;
-            this.lblFirstName.Text = "First Name:";
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(546, 16);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(255, 20);
-            this.txtFirstName.TabIndex = 45;
-            // 
-            // txtMiddleName
-            // 
-            this.txtMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMiddleName.Location = new System.Drawing.Point(546, 42);
-            this.txtMiddleName.Name = "txtMiddleName";
-            this.txtMiddleName.Size = new System.Drawing.Size(255, 20);
-            this.txtMiddleName.TabIndex = 46;
-            // 
-            // txtSurname
-            // 
-            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSurname.Location = new System.Drawing.Point(546, 68);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(255, 20);
-            this.txtSurname.TabIndex = 47;
-            // 
-            // txtCivilStatus
-            // 
-            this.txtCivilStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCivilStatus.Location = new System.Drawing.Point(546, 94);
-            this.txtCivilStatus.Name = "txtCivilStatus";
-            this.txtCivilStatus.Size = new System.Drawing.Size(255, 20);
-            this.txtCivilStatus.TabIndex = 48;
-            // 
-            // txtDependentStatus
-            // 
-            this.txtDependentStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDependentStatus.Location = new System.Drawing.Point(546, 120);
-            this.txtDependentStatus.Name = "txtDependentStatus";
-            this.txtDependentStatus.Size = new System.Drawing.Size(255, 20);
-            this.txtDependentStatus.TabIndex = 49;
-            // 
-            // txtPaydate
-            // 
-            this.txtPaydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaydate.Location = new System.Drawing.Point(546, 146);
-            this.txtPaydate.Name = "txtPaydate";
-            this.txtPaydate.Size = new System.Drawing.Size(255, 20);
-            this.txtPaydate.TabIndex = 50;
-            // 
-            // txtEmployeeStatus
-            // 
-            this.txtEmployeeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeStatus.Location = new System.Drawing.Point(546, 172);
-            this.txtEmployeeStatus.Name = "txtEmployeeStatus";
-            this.txtEmployeeStatus.Size = new System.Drawing.Size(255, 20);
-            this.txtEmployeeStatus.TabIndex = 51;
-            // 
-            // txtDesignation
-            // 
-            this.txtDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesignation.Location = new System.Drawing.Point(546, 198);
-            this.txtDesignation.Name = "txtDesignation";
-            this.txtDesignation.Size = new System.Drawing.Size(255, 20);
-            this.txtDesignation.TabIndex = 52;
-            // 
-            // lblCivilStatus
-            // 
-            this.lblCivilStatus.AutoSize = true;
-            this.lblCivilStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCivilStatus.Location = new System.Drawing.Point(403, 97);
-            this.lblCivilStatus.Name = "lblCivilStatus";
-            this.lblCivilStatus.Size = new System.Drawing.Size(62, 13);
-            this.lblCivilStatus.TabIndex = 53;
-            this.lblCivilStatus.Text = "Civil Status:";
-            // 
             // gboxRegulardeductions
             // 
             this.gboxRegulardeductions.Controls.Add(this.txtIncomeTaxContribute);
@@ -626,27 +636,53 @@
             this.gboxRegulardeductions.TabStop = false;
             this.gboxRegulardeductions.Text = "REGULAR DEDUCTIONS:";
             // 
+            // txtIncomeTaxContribute
+            // 
+            this.txtIncomeTaxContribute.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtIncomeTaxContribute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIncomeTaxContribute.Location = new System.Drawing.Point(140, 119);
+            this.txtIncomeTaxContribute.Name = "txtIncomeTaxContribute";
+            this.txtIncomeTaxContribute.ReadOnly = true;
+            this.txtIncomeTaxContribute.Size = new System.Drawing.Size(255, 20);
+            this.txtIncomeTaxContribute.TabIndex = 10;
+            // 
+            // lblIncometax
+            // 
+            this.lblIncometax.AutoSize = true;
+            this.lblIncometax.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIncometax.Location = new System.Drawing.Point(6, 122);
+            this.lblIncometax.Name = "lblIncometax";
+            this.lblIncometax.Size = new System.Drawing.Size(125, 13);
+            this.lblIncometax.TabIndex = 9;
+            this.lblIncometax.Text = "Income Tax Contribution:";
+            // 
             // txtPagibigContribute
             // 
+            this.txtPagibigContribute.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtPagibigContribute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPagibigContribute.Location = new System.Drawing.Point(140, 86);
             this.txtPagibigContribute.Name = "txtPagibigContribute";
+            this.txtPagibigContribute.ReadOnly = true;
             this.txtPagibigContribute.Size = new System.Drawing.Size(255, 20);
             this.txtPagibigContribute.TabIndex = 8;
             // 
             // txtSSSContribute
             // 
+            this.txtSSSContribute.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtSSSContribute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSSContribute.Location = new System.Drawing.Point(140, 21);
             this.txtSSSContribute.Name = "txtSSSContribute";
+            this.txtSSSContribute.ReadOnly = true;
             this.txtSSSContribute.Size = new System.Drawing.Size(255, 20);
             this.txtSSSContribute.TabIndex = 4;
             // 
             // txtPhilHContribute
             // 
+            this.txtPhilHContribute.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtPhilHContribute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhilHContribute.Location = new System.Drawing.Point(140, 53);
             this.txtPhilHContribute.Name = "txtPhilHContribute";
+            this.txtPhilHContribute.ReadOnly = true;
             this.txtPhilHContribute.Size = new System.Drawing.Size(255, 20);
             this.txtPhilHContribute.TabIndex = 5;
             // 
@@ -680,24 +716,6 @@
             this.lblPagibig.TabIndex = 7;
             this.lblPagibig.Text = "Pagibig Contribution:";
             // 
-            // txtIncomeTaxContribute
-            // 
-            this.txtIncomeTaxContribute.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIncomeTaxContribute.Location = new System.Drawing.Point(140, 119);
-            this.txtIncomeTaxContribute.Name = "txtIncomeTaxContribute";
-            this.txtIncomeTaxContribute.Size = new System.Drawing.Size(255, 20);
-            this.txtIncomeTaxContribute.TabIndex = 10;
-            // 
-            // lblIncometax
-            // 
-            this.lblIncometax.AutoSize = true;
-            this.lblIncometax.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncometax.Location = new System.Drawing.Point(6, 122);
-            this.lblIncometax.Name = "lblIncometax";
-            this.lblIncometax.Size = new System.Drawing.Size(125, 13);
-            this.lblIncometax.TabIndex = 9;
-            this.lblIncometax.Text = "Income Tax Contribution:";
-            // 
             // gboxOtherDeductions
             // 
             this.gboxOtherDeductions.Controls.Add(this.txtOtherLoan);
@@ -719,6 +737,42 @@
             this.gboxOtherDeductions.TabIndex = 22;
             this.gboxOtherDeductions.TabStop = false;
             this.gboxOtherDeductions.Text = "OTHER DEDUCTIONS:";
+            // 
+            // txtOtherLoan
+            // 
+            this.txtOtherLoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtherLoan.Location = new System.Drawing.Point(140, 186);
+            this.txtOtherLoan.Name = "txtOtherLoan";
+            this.txtOtherLoan.Size = new System.Drawing.Size(255, 20);
+            this.txtOtherLoan.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 189);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Other Loans:";
+            // 
+            // txtSalaryLoan
+            // 
+            this.txtSalaryLoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalaryLoan.Location = new System.Drawing.Point(140, 153);
+            this.txtSalaryLoan.Name = "txtSalaryLoan";
+            this.txtSalaryLoan.Size = new System.Drawing.Size(255, 20);
+            this.txtSalaryLoan.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Salary Loan:";
             // 
             // txtFacultyLoan
             // 
@@ -792,65 +846,86 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Faculty Savings Deposit:";
             // 
-            // txtSalaryLoan
+            // gbDeductionSummary
             // 
-            this.txtSalaryLoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalaryLoan.Location = new System.Drawing.Point(140, 153);
-            this.txtSalaryLoan.Name = "txtSalaryLoan";
-            this.txtSalaryLoan.Size = new System.Drawing.Size(255, 20);
-            this.txtSalaryLoan.TabIndex = 12;
+            this.gbDeductionSummary.Controls.Add(this.btnNew);
+            this.gbDeductionSummary.Controls.Add(this.btnUpdate);
+            this.gbDeductionSummary.Controls.Add(this.btnSave);
+            this.gbDeductionSummary.Controls.Add(this.btnNetIncome);
+            this.gbDeductionSummary.Controls.Add(this.btnGrossIncome);
+            this.gbDeductionSummary.Controls.Add(this.txtTotalDeduction);
+            this.gbDeductionSummary.Controls.Add(this.label2);
+            this.gbDeductionSummary.Controls.Add(this.label9);
+            this.gbDeductionSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDeductionSummary.Location = new System.Drawing.Point(419, 678);
+            this.gbDeductionSummary.Name = "gbDeductionSummary";
+            this.gbDeductionSummary.Size = new System.Drawing.Size(400, 88);
+            this.gbDeductionSummary.TabIndex = 23;
+            this.gbDeductionSummary.TabStop = false;
+            this.gbDeductionSummary.Text = "DEDUCTION SUMMARY:";
             // 
-            // label5
+            // btnNew
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Salary Loan:";
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.Location = new System.Drawing.Point(328, 55);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(56, 23);
+            this.btnNew.TabIndex = 28;
+            this.btnNew.Text = "NEW";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // txtOtherLoan
+            // btnUpdate
             // 
-            this.txtOtherLoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtherLoan.Location = new System.Drawing.Point(140, 186);
-            this.txtOtherLoan.Name = "txtOtherLoan";
-            this.txtOtherLoan.Size = new System.Drawing.Size(255, 20);
-            this.txtOtherLoan.TabIndex = 14;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(263, 54);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(59, 23);
+            this.btnUpdate.TabIndex = 27;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // label6
+            // btnSave
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 189);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Other Loans:";
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(203, 55);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(54, 23);
+            this.btnSave.TabIndex = 26;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // groupBox1
+            // btnNetIncome
             // 
-            this.groupBox1.Controls.Add(this.btnNew);
-            this.groupBox1.Controls.Add(this.btnUpdate);
-            this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Controls.Add(this.btnNetIncome);
-            this.groupBox1.Controls.Add(this.btnGrossIncome);
-            this.groupBox1.Controls.Add(this.txtTotalDeduction);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(419, 678);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(400, 88);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "DEDUCTION SUMMARY:";
+            this.btnNetIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNetIncome.Location = new System.Drawing.Point(115, 55);
+            this.btnNetIncome.Name = "btnNetIncome";
+            this.btnNetIncome.Size = new System.Drawing.Size(82, 23);
+            this.btnNetIncome.TabIndex = 25;
+            this.btnNetIncome.Text = "NET INCOME";
+            this.btnNetIncome.UseVisualStyleBackColor = true;
+            this.btnNetIncome.Click += new System.EventHandler(this.btnNetIncome_Click);
+            // 
+            // btnGrossIncome
+            // 
+            this.btnGrossIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrossIncome.Location = new System.Drawing.Point(6, 55);
+            this.btnGrossIncome.Name = "btnGrossIncome";
+            this.btnGrossIncome.Size = new System.Drawing.Size(103, 23);
+            this.btnGrossIncome.TabIndex = 24;
+            this.btnGrossIncome.Text = "GROSS INCOME";
+            this.btnGrossIncome.UseVisualStyleBackColor = true;
+            this.btnGrossIncome.Click += new System.EventHandler(this.btnGrossIncome_Click);
             // 
             // txtTotalDeduction
             // 
+            this.txtTotalDeduction.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtTotalDeduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalDeduction.Location = new System.Drawing.Point(139, 28);
             this.txtTotalDeduction.Name = "txtTotalDeduction";
+            this.txtTotalDeduction.ReadOnly = true;
             this.txtTotalDeduction.Size = new System.Drawing.Size(255, 20);
             this.txtTotalDeduction.TabIndex = 18;
             // 
@@ -873,67 +948,21 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "label9";
             // 
-            // btnGrossIncome
+            // dtpPayDate
             // 
-            this.btnGrossIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrossIncome.Location = new System.Drawing.Point(6, 55);
-            this.btnGrossIncome.Name = "btnGrossIncome";
-            this.btnGrossIncome.Size = new System.Drawing.Size(103, 23);
-            this.btnGrossIncome.TabIndex = 24;
-            this.btnGrossIncome.Text = "GROSS INCOME";
-            this.btnGrossIncome.UseVisualStyleBackColor = true;
-            this.btnGrossIncome.Click += new System.EventHandler(this.btnGrossIncome_Click);
-            // 
-            // btnNetIncome
-            // 
-            this.btnNetIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNetIncome.Location = new System.Drawing.Point(115, 55);
-            this.btnNetIncome.Name = "btnNetIncome";
-            this.btnNetIncome.Size = new System.Drawing.Size(82, 23);
-            this.btnNetIncome.TabIndex = 25;
-            this.btnNetIncome.Text = "NET INCOME";
-            this.btnNetIncome.UseVisualStyleBackColor = true;
-            this.btnNetIncome.Click += new System.EventHandler(this.btnNetIncome_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(203, 55);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(54, 23);
-            this.btnSave.TabIndex = 26;
-            this.btnSave.Text = "SAVE";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(263, 54);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(59, 23);
-            this.btnUpdate.TabIndex = 27;
-            this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnNew
-            // 
-            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(328, 55);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(56, 23);
-            this.btnNew.TabIndex = 28;
-            this.btnNew.Text = "NEW";
-            this.btnNew.UseVisualStyleBackColor = true;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            this.dtpPayDate.Location = new System.Drawing.Point(546, 146);
+            this.dtpPayDate.Name = "dtpPayDate";
+            this.dtpPayDate.Size = new System.Drawing.Size(255, 20);
+            this.dtpPayDate.TabIndex = 24;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(832, 779);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbDeductionSummary);
             this.Controls.Add(this.gboxOtherDeductions);
             this.Controls.Add(this.gboxRegulardeductions);
             this.Controls.Add(this.gboxSummaryIncome);
@@ -941,7 +970,9 @@
             this.Controls.Add(this.gboxHonorariumIncome);
             this.Controls.Add(this.gboxBasicIncome);
             this.Controls.Add(this.gboxEmployeeInfo);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gboxEmployeeInfo.ResumeLayout(false);
@@ -958,8 +989,8 @@
             this.gboxRegulardeductions.PerformLayout();
             this.gboxOtherDeductions.ResumeLayout(false);
             this.gboxOtherDeductions.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbDeductionSummary.ResumeLayout(false);
+            this.gbDeductionSummary.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -986,8 +1017,8 @@
         private System.Windows.Forms.Label lblGrossIncome;
         private System.Windows.Forms.Label lblNetIncome;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtEmployeeNum;
         private System.Windows.Forms.TextBox txtDepartment;
+        private System.Windows.Forms.TextBox txtEmployeeNumber;
         private System.Windows.Forms.TextBox txtBIIncomeperCutoff;
         private System.Windows.Forms.TextBox txtBIRateperHr;
         private System.Windows.Forms.TextBox txtBIHrperCutoff;
@@ -1003,7 +1034,6 @@
         private System.Windows.Forms.Label lblDesignation;
         private System.Windows.Forms.TextBox txtDesignation;
         private System.Windows.Forms.TextBox txtEmployeeStatus;
-        private System.Windows.Forms.TextBox txtPaydate;
         private System.Windows.Forms.TextBox txtDependentStatus;
         private System.Windows.Forms.TextBox txtCivilStatus;
         private System.Windows.Forms.TextBox txtSurname;
@@ -1036,7 +1066,7 @@
         private System.Windows.Forms.Label lblSSSloan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbDeductionSummary;
         private System.Windows.Forms.TextBox txtTotalDeduction;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
@@ -1046,6 +1076,7 @@
         private System.Windows.Forms.Button btnNetIncome;
         private System.Windows.Forms.Button btnGrossIncome;
         private System.Windows.Forms.TextBox txtFacultyDeposit;
+        private System.Windows.Forms.DateTimePicker dtpPayDate;
     }
 }
 
